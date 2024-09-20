@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.userprofile"
+    namespace = "com.example.polyglotlearn"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.userprofile"
+        applicationId = "com.example.polyglotlearn"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
