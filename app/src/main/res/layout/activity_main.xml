@@ -105,15 +105,6 @@
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
-            <!-- Texto para redirigir al restablecer contraseña -->
-            <TextView
-                android:id="@+id/signUpTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:text="¿Tienes una cuenta? Ingresar"
-                android:textColor="@color/blue" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

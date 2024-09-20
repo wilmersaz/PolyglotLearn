@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "User Profile"
+rootProject.name = "Polyglot Learn"
 include(":app")
  

@@ -1,4 +1,4 @@
-package com.example.userprofile
+package com.example.polyglotlearn
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.userprofile", appContext.packageName)
+        assertEquals("com.example.polyglotlearn", appContext.packageName)
     }
 }

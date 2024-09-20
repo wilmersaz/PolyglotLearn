@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">User Profile</string>
+    <string name="app_name">Polyglot Learn</string>
     <string name="name">Nombre: Wilmer Sanchez</string>
     <string name="age">Edad: 34 años</string>
     <string name="profession">Profesión: Desarrollador</string>
     <string name="city">Ciudad: Bogotá DC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
