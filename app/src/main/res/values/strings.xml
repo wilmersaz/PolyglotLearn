@@ -4,6 +4,6 @@
     <string name="age">Edad: 34 años</string>
     <string name="profession">Profesión: Desarrollador</string>
     <string name="city">Ciudad: Bogotá DC</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
 </resources>

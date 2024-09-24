@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.perfil">
+    tools:context=".Perfil">
 
     <TextView
         android:id="@+id/textView6"
@@ -57,7 +57,6 @@
         tools:layout_editor_absoluteY="-2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf=""
         />
 
     <EditText
@@ -81,7 +80,6 @@
         app:layout_constraintHorizontal_bias="0.996"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="5dp"
-        app:layout_constraintBottom_toBottomOf=""
         />
 
     <androidx.constraintlayout.utils.widget.ImageFilterButton
@@ -157,7 +155,7 @@
         android:id="@+id/imageView7"
         android:layout_width="96dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/CORREO"
+        app:srcCompat="@drawable/correo"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="332dp"
         tools:ignore="MissingConstraints" />

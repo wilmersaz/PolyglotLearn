@@ -1,5 +1,6 @@
 package com.example.polyglotlearn
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +30,21 @@ class WelcomeActivity : AppCompatActivity() {
         toggle.syncState()
 
         navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Maneja la selección de elementos del menú aquí
+            // Manejar la selección de elementos del menú
+            when (menuItem.itemId) {
+                R.id.nav_profile -> {
+                    // Navegar a la Activity de Perfil
+                    val intent = Intent(this, Perfil::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_home -> {
+                    // Lógica para la opción Home (si es necesario)
+                }
+                R.id.nav_logout -> {
+                    // Lógica para cerrar sesión (si es necesario)
+                }
+            }
+
             menuItem.isChecked = true
             drawerLayout.closeDrawers()
             true
