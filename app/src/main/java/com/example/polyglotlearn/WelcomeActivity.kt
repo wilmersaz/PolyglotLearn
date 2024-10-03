@@ -6,6 +6,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.widget.Toolbar
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         drawerLayout = findViewById(R.id.drawer_layout)
@@ -36,18 +37,27 @@ class WelcomeActivity : AppCompatActivity() {
                     // Navegar a la Activity de Perfil
                     val intent = Intent(this, Perfil::class.java)
                     startActivity(intent)
+                    true // Asegúrate de retornar true aquí
                 }
                 R.id.nav_home -> {
-                    // Lógica para la opción Home (si es necesario)
+                    // Lógica para la opción Welcome
+                    val intent = Intent(this, WelcomeActivity::class.java)
+                    startActivity(intent)
+                    true // Asegúrate de retornar true aquí
                 }
                 R.id.nav_logout -> {
-                    // Lógica para cerrar sesión (si es necesario)
+                    // Navegar a la Activity de login
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                    true // Asegúrate de retornar true aquí
                 }
+                else -> false // Retornar false para las opciones no manejadas
             }
 
             menuItem.isChecked = true
             drawerLayout.closeDrawers()
-            true
+            true // Retornar true para indicar que se manejó la selección
         }
+
     }
 }
