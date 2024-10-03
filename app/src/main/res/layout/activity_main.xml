@@ -4,107 +4,133 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="#00181515"
+    android:backgroundTint="@color/white"
+    android:foregroundTint="#FFFFFF"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
-    <View
-        android:id="@+id/header"
-        android:layout_width="0dp"
-        android:layout_height="180dp"
-        android:background="@color/blue"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <SearchView
+        android:layout_width="58dp"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="-15dp" />
 
     <TextView
-        android:id="@+id/appTitle"
+        android:id="@+id/textView"
+        android:layout_width="149dp"
+        android:layout_height="24dp"
+        android:text="Bienvenido"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="172dp"
+        android:layout_height="87dp"
+        app:srcCompat="@mipmap/inglaterra"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="152dp"
+        android:layout_height="177dp"
+        app:srcCompat="@mipmap/españa"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="146dp"
+        android:layout_height="151dp"
+        app:srcCompat="@mipmap/portugal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="150dp"
+        android:layout_height="109dp"
+        app:srcCompat="@mipmap/francia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="151dp"
+        android:layout_height="167dp"
+        app:srcCompat="@mipmap/italia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="207dp"
+        android:layout_height="99dp"
+        app:srcCompat="@mipmap/rusia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="563dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="434dp"
+        android:layout_height="37dp"
+        android:background="#83000000"
+        android:gravity="center_vertical"
+        android:text=" ¿Que quieres aprender hoy?"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="67dp"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="172dp"
+        android:layout_height="89dp"
+        app:srcCompat="@mipmap/japon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        app:srcCompat="@mipmap/china"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PoliglotLearn"
-        android:textColor="@color/whiteTextColor"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/header"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/header" />
+        app:barrierDirection="top" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/loginCard"
-        android:layout_width="0dp"
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appTitle">
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="1dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="490dp"
-            android:layout_marginBottom="16dp"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <!-- Texto "Login" -->
-            <TextView
-                android:id="@+id/loginTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="LOGIN"
-                android:textColor="@color/blue"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <!-- Campo para el email -->
-            <EditText
-                android:id="@+id/emailEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@android:color/darker_gray"
-                android:hint="Username"
-                android:inputType="textEmailAddress"
-                android:padding="12dp"
-                android:text="example@email.com" />
-
-            <!-- Campo para la contraseña -->
-            <EditText
-                android:id="@+id/passwordEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@android:color/darker_gray"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="12dp" />
-
-            <!-- Enlace para recuperar la contraseña -->
-            <TextView
-                android:id="@+id/forgotPasswordTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="12dp"
-                android:text="¿Olvidaste tu contraseña?"
-                android:textColor="@color/blue" />
-
-            <!-- Botón de login -->
-            <Button
-                android:id="@+id/loginButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/blue"
-                android:text="Ingresar"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
