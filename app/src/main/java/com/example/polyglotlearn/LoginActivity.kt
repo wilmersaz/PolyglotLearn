@@ -7,10 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import android.widget.Button
+import android.widget.TextView
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState) 
         enableEdgeToEdge()
         setContentView(R.layout.`activity_login`)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.login)) { v, insets ->
@@ -22,6 +23,13 @@ class LoginActivity : AppCompatActivity() {
         loginButton.setOnClickListener {
             // Redirige a WelcomeActivity
             val intent = Intent(this, WelcomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        val forgotPasswordTextView: TextView = findViewById(R.id.forgotPasswordTextView)
+        forgotPasswordTextView.setOnClickListener {
+            // Redirige a ResetPasswordActivity
+            val intent = Intent(this, ResetPasswordActivity::class.java)
             startActivity(intent)
         }
     }

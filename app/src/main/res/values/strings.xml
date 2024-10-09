@@ -6,4 +6,9 @@
     <string name="city">Ciudad: Bogotá DC</string>
     <string name="navigation_drawer_open">Abrir menú de navegación</string>
     <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    <string name="enter_password">Ingresar Contraseña</string>
+    <string name="reset_password">Restablecer Contraseña</string>
+    <string name="the_password_should_have_at_least_6_characters">La contraseña no puede contener menos de 6 caracteres</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="password_reset">Restablecer Contraseña</string>
 </resources>
